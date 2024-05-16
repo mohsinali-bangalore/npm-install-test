@@ -10,12 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-# - task: JFrogNpm@1
-#   inputs:
-#     command: 'install'
-#     artifactoryConnection: 'Artifactory-Token-Based-Authentication'
-#     sourceRepo: 'mohsin-npm'
-#     arguments: 'npm install hello --verbose'
+- task: JFrogNpm@1
+  inputs:
+    command: 'install'
+    artifactoryConnection: 'Artifactory-Token-Based-Authentication'
+    sourceRepo: 'mohsin-npm'
+    arguments: 'npm install hello --verbose'
 
 # - script: echo Hello, world!
 #   displayName: 'Run a one-line script'
@@ -25,8 +25,8 @@ steps:
 #     echo See https://aka.ms/yaml
 #   displayName: 'Run a multi-line script'
 
-- task: JfrogCliV2@1
-  displayName: 'Installing npm package using JFrog CLI command'
-  inputs:
-    jfrogPlatformConnection: 'Artifactory-Platform-Admin-Authentication'
-    command: 'jf npm install hello --verbose'
+# - task: JfrogCliV2@1
+#   displayName: 'Installing npm package using JFrog CLI command'
+#   inputs:
+#     jfrogPlatformConnection: 'Artifactory-Platform-Admin-Authentication'
+#     command: 'jf npm install hello --verbose'
