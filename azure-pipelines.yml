@@ -15,7 +15,7 @@ steps:
     command: 'install'
     artifactoryConnection: 'Artifactory-Token-Based-Authentication'
     sourceRepo: 'mohsin-npm'
-    arguments: 'npm install sudo-prompt --verbose'
+    arguments: 'export JFROG_CLI_LOG_LEVEL=DEBUG, npm install hello-world --verbose'
 
 # - script: echo Hello, world!
 #   displayName: 'Run a one-line script'
