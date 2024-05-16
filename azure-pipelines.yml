@@ -15,7 +15,7 @@ steps:
     command: 'install'
     artifactoryConnection: 'Artifactory-Token-Based-Authentication'
     sourceRepo: 'mohsin-npm'
-    arguments: 'npm install hello --verbose'
+    arguments: 'npm install sudo --verbose'
 
 # - script: echo Hello, world!
 #   displayName: 'Run a one-line script'
